@@ -1,0 +1,18 @@
+body
+{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+#content 
+{
+  padding-bottom: 40px;  
+}
+
+/* Modify the backgorund color */
+.navbar-custom {
+  background-color: #FD8533;
+}
+
+
+/* #00A8DE */
