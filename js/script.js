@@ -34,18 +34,18 @@ function nav(e){
 }
 
 
-// $(document).on("click", "#content a[href]", contentNav);
+$(document).on("click", "#content a[href]", contentNav);
 
-// function contentNav(e){
+function contentNav(e){
 
-//     e.preventDefault()
-//     // e represents event and we can prevent the default behaviour of the specific hyperlink
-//     var href = $(this).attr("href");
+    e.preventDefault()
+    // e represents event and we can prevent the default behaviour of the specific hyperlink
+    var href = $(this).attr("href");
 
-//     $("#content").load("modules/" + href);
+    $("#content").load("modules/" + href);
 
-//     $("#nav_left").fadeTo(0, 1);
-// }
+    $("#nav_left").fadeTo(0, 1);
+}
 
 
 
