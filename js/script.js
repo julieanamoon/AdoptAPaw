@@ -54,4 +54,5 @@ function contentNav(e){
 $(document).ready(function() {
 
     $.ajaxSetup({ cache: false });
+    
   });
