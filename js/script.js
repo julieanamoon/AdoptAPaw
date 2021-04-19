@@ -76,7 +76,7 @@ function place(index, obj){
        
        } else {
     
-        var url = "https://api.creativecommons.engineering/v1/images?format=json&q="+keyword;
+        var url = "https://api.creativecommons.engineering/v1/images?page_size=3&format=json&q="+keyword;
     
         $.ajax({
         url: url,
