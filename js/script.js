@@ -54,6 +54,28 @@ function contentNav(e){
 }
 
 
+// LOAD FROM SETTINGS MENU
+$(document).on("click", "#header a[href]", dropdownProfile);
+
+function dropdownProfile(e){
+
+    e.preventDefault()
+    // e represents event and we can prevent the default behaviour of the specific hyperlink
+    var href = $(this).attr("href");
+
+    $("#content").load("modules/" + href);
+
+    $("#nav_left").fadeTo(0, 1);
+
+    
+
+}
+
+
+
+
+
+
 // TOGGLE FAVOURITES
 function favourite(x) {
     x.classList.toggle("fa-star-o");
