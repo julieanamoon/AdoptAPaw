@@ -5,7 +5,7 @@ function start(){
     $("#nav a:first").click();
 }
 
-
+// CHANGE NAVIGATION TITLE
 $(document).on("click", "#nav a[href]", nav);
 
 function nav(e){
@@ -34,6 +34,8 @@ function nav(e){
 }
 
 
+
+// LOAD OTHER HTML PAGES TO CONTENT SECTION
 $(document).on("click", "#content a[href]", contentNav);
 
 function contentNav(e){
@@ -45,11 +47,17 @@ function contentNav(e){
     $("#content").load("modules/" + href);
 
     $("#nav_left").fadeTo(0, 1);
+
+    if (href == "donate.html") {
+        $("#nav_title").text("Donate");
+    } 
 }
 
 
-
-
+// TOGGLE FAVOURITES
+function favourite(x) {
+    x.classList.toggle("fa-star-o");
+  }
 
 
 // SEARCH CODE
@@ -90,16 +98,6 @@ function place(index, obj){
     }
     
     $(document).on("keyup", "#keyword", search);
-
-
-
-
-
-
-
-
-
-
 
 
 // CLEAR CACHE
