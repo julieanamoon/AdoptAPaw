@@ -25,7 +25,7 @@ By: Julieana Moon 101254440
 - Focuses on partnerships with animal shelters, rescues, and non-project organizations; helping to bridge the gap between potential owners and pets.
 
 ---
-### Clickables (a guide to everything that is clickable)
+### Interactions (a guide to everything that is clickable)
 - All bottom navigations
 - Donate
 - Setting > Preferences
